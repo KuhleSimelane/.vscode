@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IsiZulu</title>
+    <style>
+        body {
+            font-family: Times New Roman', Times, serif;
+        }
+
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+       }
+
+      h1 {
+        color: #2c70ee;
+        text-align: center;
+        border: 1px solid #fff;padding: 20px;
+        border-radius: 4px;
+      }
+      h2 {
+        text-align: center;
+        color: #2c70ee;
+        padding: 0 0 24px;
+        line-height: 1.5;
+        }
+      p {
+        color: #1d0ea5e1;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        display: block;
+      }
+       button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #1a0eccc5;
+        color: #2629d8;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 10px 10px;
+      }
+      button:hover {
+        color: #fff;
+        background: #081ac4;
+      }
+      .language {
+        font-weight: 800;
+        color: rgb(90, 7, 185);
+      }
+      .link {
+        color: #081ac4;
+        text-align: center;
+        font-size: 15px;
+    }
+
+     img {
+        display: block;
+        text-align: right;
+        width: 350px;
+        background: linear-gradient(to right, #234a91, #912077);
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <section>
+    <h1>ISIZULU</h1>
+    <h2>
+        <em>Bantu language of the <span class="language">Zulu clan</span></em>
+    </h2>
+    <hr />
+   <center><img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeciUMEwuJL3YKYvi3o3Sy8xH5mDtOkvAuzA&usqp=CAU"
+    />
+    </center>
+     <p>
+   
+      IsiZulu is South Africa's most widely spoken official language. It is a
+      tonal language understood by people from the Cape to Zimbabwe and is
+      characterized by many "clicks".The Zulu language, of which there are
+      variations, is part of the Nguni language group. The word Zulu means "Sky"
+     <div><a class="link" href="https://www.sahistory.org.za/article/zulu">
+        Learn more about the IsiZulu culture</div>
+      </a>
+      <br />
+      <button>Learn IsiZulu</button>
+    </p>
+    <center><img src="https://demandafrica.com/wp-content/uploads/2018/08/Zulu-Culture-bead-bracelets.jpg" </center>
+   <hr />
+    </section>
+    <script> 
+    function canspeakIsizulu()  {
+        let name = prompt("What is your name?");
+        let speak = prompt("Do you speak IsiZulu?");
+        let h1 = document.querySelector("h1");
+
+        if (speak >= "yes") {
+            h1.innerHTML = "Sawubona " + name;
+         } else {
+            h1.innerHTML = "Sawubona means hello!";
+        }
+        }
+        let talk = prompt("Would you like to learn IsiZulu?")
+        if (talk >= "yes") {
+        alert("Thank you " + name + "! We'll be in touch")
+        }
+        
+     let speakIsiZulu = document.querySelector("button");
+      speakIsiZulu.addEventListener("click", canspeakIsizulu);
+         </script>
+  </body>
+</html>

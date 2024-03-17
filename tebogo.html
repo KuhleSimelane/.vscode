@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebogo</title>
+    <style>
+body {
+background-color: #F5F5F5;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1,
+h2 {
+    display: flex;
+justify-content: center;
+}
+h1 {
+    border: 1px solid black;
+    border-radius: 25px;
+}
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+.button {
+     border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid black;
+        color: black;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: black;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>This is Tebogo</h1>
+      <div class="image"><img src="C:\Users\Kuhle\Downloads\1707860317290.jpg" width="200" /></div>
+      <h2>
+        Even though he sometimes gets on my nerves. He is still my best friend.
+      </h2>
+       </header>
+       <hr />
+       <button class="button">Click here</button>
+      <p>Things Tebogo likes:
+        <div>
+            <ul>
+                <li>He loves food</li>
+                <li>He loves music</li>
+                <li>He loves Kuhle</li>
+                <li>He loves kisses</li>
+            </ul>
+        </div>
+      </p>
+     <p>Here's my favourite picture of TEBOGO❤️</p>
+    <div class="image"><img  src="C:\Users\Kuhle\Downloads\1707860163600.jpg" width="200"/></div>
+   <p>I LOVE YOU SKHOSIE❤️</p>
+   
+   <script>
+     function click() {
+  let firstName = prompt("What is your first name?");
+  let age = prompt("How old are you?");
+  let heading = document.querySelector("h1");
+  if (age >= 18) {
+    heading.innerHTML = "Happy Valentines " + firstName + "! I love you sm babe❤️";
+  } else {
+    heading.innerHTML =
+      "Happy Valentined Baby❤️";
+  }
+}
+let pressButton = document.querySelector("button");
+pressButton.addEventListener("click", click);
+    </script>
+  </body>
+</html>
